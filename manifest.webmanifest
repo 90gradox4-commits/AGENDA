@@ -1,0 +1,9 @@
+{
+  "name": "90° Studio — Agenda",
+  "short_name": "Agenda 90°",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#171824",
+  "theme_color": "#171824",
+  "description": "Agenda de sesiones fotográficas y audiovisuales"
+}

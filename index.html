@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#171824"><meta name="description" content="Agenda profesional de sesiones fotográficas y audiovisuales 90° Studio">
+<link rel="manifest" href="manifest.webmanifest">
+<title>90° Studio — Agenda</title>
+<style>
+:root{--bg:#171824;--panel:#202231;--panel2:#252839;--edge:#34384c;--text:#f5f5ff;--muted:#a6a9bf;--purple:#a77bff;--purple2:#7c4dff;--cyan:#56d8f2;--green:#39d6ae;--yellow:#f5c85b;--red:#ff5d76;--shadow:10px 10px 24px #10111a,-8px -8px 22px #252838;--inset:inset 5px 5px 12px #141620,inset -5px -5px 12px #2b2e41}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#28243c 0,transparent 35%),var(--bg);color:var(--text);font:15px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer;color:inherit;border:0}.app{max-width:1440px;margin:auto;padding:28px 30px 100px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:28px}.brand{display:flex;align-items:center;gap:14px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(145deg,#302b49,#171824);box-shadow:var(--shadow);display:grid;place-items:center;color:var(--purple);font-size:21px;font-weight:800}.eyebrow{font-size:11px;letter-spacing:4px;color:var(--muted);text-transform:uppercase}.brand h1{font-size:19px;letter-spacing:2px;margin:2px 0}.top-actions{display:flex;gap:10px;align-items:center}.icon-btn,.btn,.tab{background:linear-gradient(145deg,#292c3e,#1a1c29);box-shadow:var(--shadow);border:1px solid #303448;border-radius:15px;padding:12px 16px}.icon-btn{width:46px;height:46px;padding:0;font-size:19px}.btn.primary{background:linear-gradient(135deg,#a77bff,#7044dc);box-shadow:0 0 22px #8e61ff55;color:white;font-weight:700}.btn.ghost{color:var(--muted)}.hero{display:flex;justify-content:space-between;align-items:end;margin:20px 0 24px}.hero h2{font-size:clamp(28px,4vw,43px);margin:0 0 5px;letter-spacing:-1.5px}.hero h2 span{color:var(--purple)}.hero p{color:var(--muted);margin:0}.status{color:var(--cyan);font-size:13px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}.stat,.panel,.session-card{background:linear-gradient(145deg,#252839,#1b1d2a);border:1px solid #303448;border-radius:24px;box-shadow:var(--shadow)}.stat{padding:19px 20px;display:flex;align-items:center;gap:14px}.stat-icon{width:44px;height:44px;border-radius:15px;display:grid;place-items:center;background:#29253d;color:var(--purple);font-size:20px;box-shadow:var(--inset)}.stat strong{font-size:25px;display:block}.stat small{color:var(--muted)}.layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(310px,.85fr);gap:20px}.panel{padding:22px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.panel-head h3{font-size:18px;margin:0}.sub{color:var(--muted);font-size:12px}.month-nav{display:flex;align-items:center;gap:10px}.month-nav strong{min-width:145px;text-align:center;font-size:15px}.month-nav button{width:34px;height:34px;border-radius:11px;background:#292c3e;box-shadow:var(--shadow)}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}.weekday{text-align:center;color:var(--muted);font-size:11px;padding:7px 0}.day{min-height:100px;border-radius:15px;padding:9px;background:#1c1e2b;border:1px solid #2c3042;position:relative;overflow:hidden;transition:.2s}.day.muted{opacity:.35}.day.today{outline:1px solid var(--purple);box-shadow:0 0 15px #9d70ff30}.day-num{font-weight:700;font-size:13px}.day-items{display:flex;flex-direction:column;gap:4px;margin-top:7px}.event-chip{font-size:10px;line-height:1.25;padding:5px 6px;border-radius:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#34304b;border-left:3px solid var(--purple)}.event-chip.green{border-color:var(--green)}.event-chip.yellow{border-color:var(--yellow)}.event-chip.red{border-color:var(--red)}.day.has-event{animation:glow 2.2s ease-in-out infinite alternate}.day.has-event:after{content:"";position:absolute;inset:0;border-radius:15px;pointer-events:none;border:1px solid #a77bff38;animation:blink 1.8s infinite}@keyframes blink{50%{opacity:.15}}@keyframes glow{to{box-shadow:0 0 15px #9c6cff2b}}.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;color:var(--muted);font-size:12px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.green-bg{background:var(--green)}.yellow-bg{background:var(--yellow)}.red-bg{background:var(--red)}.side{display:flex;flex-direction:column;gap:20px}.quick{display:flex;gap:10px;align-items:center}.quick .btn{flex:1}.upcoming-list{display:flex;flex-direction:column;gap:10px}.session-card{padding:14px;border-radius:17px;box-shadow:none;background:#1c1f2d}.session-top{display:flex;justify-content:space-between;gap:8px}.session-card h4{margin:0;font-size:14px}.session-card p{margin:5px 0;color:var(--muted);font-size:12px}.pill{font-size:10px;padding:5px 8px;border-radius:20px;background:#353149;color:#d6c3ff;white-space:nowrap}.pill.green{background:#163c36;color:#72e7c5}.pill.yellow{background:#463b20;color:#ffdc83}.pill.red{background:#482530;color:#ff9aaa}.actions{display:flex;gap:7px;margin-top:10px}.mini{font-size:11px;padding:7px 10px;border-radius:9px;background:#2b2e40;color:#c7c9d8}.mini.danger{color:#ff8799}.empty{padding:25px;text-align:center;color:var(--muted);font-size:13px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:var(--muted)}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border-radius:12px;color:var(--text);background:#171925;border:1px solid #34384c;outline:none;box-shadow:var(--inset)}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--purple)}.field textarea{resize:vertical;min-height:75px}.modal{position:fixed;inset:0;background:#080911c9;display:none;place-items:center;padding:18px;z-index:10;backdrop-filter:blur(9px)}.modal.open{display:grid}.dialog{width:min(620px,100%);max-height:92vh;overflow:auto;background:linear-gradient(145deg,#292c3e,#1b1d2a);border:1px solid #41445b;border-radius:24px;padding:24px;box-shadow:0 25px 80px #0009}.dialog-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.dialog-head h3{margin:0}.close{background:#35384b;border-radius:10px;width:34px;height:34px}.dialog-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}.alarm{position:fixed;right:20px;bottom:20px;z-index:20;background:#3d1d2a;border:1px solid #ff657d;border-radius:18px;padding:16px 18px;box-shadow:0 0 30px #ff496955;max-width:340px;display:none}.alarm.show{display:block;animation:alarmPulse .8s infinite alternate}@keyframes alarmPulse{to{box-shadow:0 0 35px #ff4969aa}}.alarm strong{display:block;color:#ff9aaa;margin-bottom:4px}.alarm p{margin:0 0 10px;font-size:12px;color:#ffe0e5}.alarm button{background:#69283b;border-radius:9px;padding:8px 12px}.toast{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:30;background:#25283a;border:1px solid #51536b;border-radius:12px;padding:11px 17px;display:none;box-shadow:var(--shadow)}.footer{text-align:center;color:#777c94;font-size:11px;margin-top:28px}.mobile-nav{display:none}
+@page{size:A4 portrait;margin:0}
+@media print{
+ html,body{width:210mm!important;height:297mm!important;margin:0!important;padding:0!important;background:#fff!important;color:#171824!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .app,.modal,.alarm,.toast,.mobile-nav{display:none!important}
+ #printInvoice{display:block!important;width:210mm!important;margin:0!important;padding:0!important}
+ #printInvoice>div:first-child{width:210mm!important;max-width:none!important;min-height:0!important;margin:0!important;padding:15mm 17mm!important;border:0!important;box-shadow:none!important;page-break-after:avoid!important;break-after:avoid!important;page-break-inside:avoid!important;break-inside:avoid!important}
+ #printInvoice>div:nth-child(2){display:none!important}
+}
+#printInvoice{display:none}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}#financeBars{gap:3px!important}.finance-panel .panel-head{flex-wrap:wrap}}
+@media(max-width:600px){.app{padding:18px 13px 90px}.top{margin-bottom:20px}.hero{align-items:start;flex-direction:column;gap:10px}.stats{gap:9px}.stat{padding:13px;border-radius:17px}.stat strong{font-size:21px}.stat-icon{width:37px;height:37px}.panel{padding:14px;border-radius:19px}.calendar{gap:4px}.day{min-height:70px;padding:5px;border-radius:10px}.day-num{font-size:11px}.event-chip{font-size:8px;padding:4px 3px}.weekday{font-size:9px}.month-nav strong{min-width:110px;font-size:13px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.top-actions .btn{padding:10px;font-size:12px}.brand h1{font-size:15px}.eyebrow{letter-spacing:2px}.mobile-nav{display:flex;position:fixed;bottom:12px;left:12px;right:12px;z-index:5;justify-content:space-around;padding:12px;background:#252839eF;border:1px solid #41445b;border-radius:19px;box-shadow:var(--shadow);backdrop-filter:blur(12px)}.mobile-nav a{color:var(--muted);text-decoration:none;font-size:11px}.mobile-nav a:first-child{color:var(--purple)}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top">
+ <div class="brand"><div class="logo">90°</div><div><div class="eyebrow">Studio management</div><h1>AGENDA 90°</h1></div></div>
+ <div class="top-actions"><button class="icon-btn" id="soundBtn" title="Activar sonido">♬</button><button class="btn ghost" id="financeJump">▤ Finanzas</button><button class="btn primary" id="newBtn">＋ Nueva sesión</button></div>
+</header>
+<section class="hero"><div><h2>Hola, <span>bienvenido.</span></h2><p>Tu estudio, tus sesiones y tu tiempo en armonía.</p></div><div class="status">● SISTEMA DE AGENDA ACTIVO</div></section>
+<section class="stats">
+ <div class="stat"><div class="stat-icon">▦</div><div><strong id="totalCount">0</strong><small>Sesiones registradas</small></div></div>
+ <div class="stat"><div class="stat-icon" style="color:var(--cyan)">◷</div><div><strong id="monthCount">0</strong><small>Este mes</small></div></div>
+ <div class="stat"><div class="stat-icon" style="color:var(--yellow)">⚑</div><div><strong id="pendingCount">0</strong><small>Próximas sesiones</small></div></div>
+ <div class="stat"><div class="stat-icon" style="color:var(--red)">◉</div><div><strong id="todayCount">0</strong><small>Hoy / mañana</small></div></div>
+</section>
+<div class="layout">
+ <main class="panel" id="calendarPanel">
+  <div class="panel-head"><div><h3>Calendario de sesiones</h3><div class="sub">Consulta tus reservas por día</div></div><div class="month-nav"><button id="prevMonth">‹</button><strong id="monthLabel"></strong><button id="nextMonth">›</button></div></div>
+  <div class="calendar" id="calendar"></div>
+  <div class="legend"><span><i class="dot green-bg"></i>3 días o más</span><span><i class="dot yellow-bg"></i>2 días</span><span><i class="dot red-bg"></i>1 día / hoy</span></div>
+ </main>
+ <aside class="side">
+  <section class="panel"><div class="panel-head"><div><h3>Próximas sesiones</h3><div class="sub">Reservas más cercanas</div></div><span class="pill">En vivo</span></div><div class="upcoming-list" id="upcoming"></div></section>
+  <section class="panel"><div class="panel-head"><div><h3>Accesos rápidos</h3><div class="sub">Administra tu agenda</div></div></div><div class="quick"><button class="btn primary" id="quickAdd">＋ Agendar</button><button class="btn ghost" id="todayBtn">Hoy</button></div><p class="sub" style="margin:16px 0 0">Los datos se guardan en este navegador. Exporta una copia desde el menú de respaldo.</p><div class="quick" style="margin-top:12px"><button class="btn ghost" id="exportBtn">↓ Exportar</button><button class="btn ghost" id="importBtn">↑ Importar</button><input type="file" id="importFile" accept="application/json" hidden></div></section>
+ </aside>
+</div>
+
+<section class="panel finance-panel" id="financePanel" style="margin-top:20px">
+ <div class="panel-head"><div><h3>Finanzas del estudio</h3><div class="sub">Resumen de ingresos, abonos y saldos de todas tus sesiones</div></div><span class="pill">Actualizado automáticamente</span></div>
+ <div class="stats" style="margin-bottom:16px">
+  <div class="stat"><div class="stat-icon" style="color:var(--green)">＄</div><div><strong id="finCollected">$0</strong><small>Dinero recibido</small></div></div>
+  <div class="stat"><div class="stat-icon" style="color:var(--purple)">▤</div><div><strong id="finContracted">$0</strong><small>Total agendado</small></div></div>
+  <div class="stat"><div class="stat-icon" style="color:var(--yellow)">◷</div><div><strong id="finPending">$0</strong><small>Por cobrar</small></div></div>
+  <div class="stat"><div class="stat-icon" style="color:var(--cyan)">▦</div><div><strong id="finCount">0</strong><small>Sesiones registradas</small></div></div>
+ </div>
+ <div class="panel-head" style="margin:10px 0 12px"><div><h3 style="font-size:15px">Ingresos por mes</h3><div class="sub">Abonos y pagos registrados según la fecha de la sesión</div></div><select id="financeYear" class="mini" style="background:#171925;color:var(--text);border:1px solid var(--edge);border-radius:9px;padding:8px"></select></div>
+ <div id="financeBars" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:7px;align-items:end;min-height:145px;padding:12px 0 4px"></div>
+ <div class="panel-head" style="margin:20px 0 10px"><div><h3 style="font-size:15px">Detalle financiero</h3><div class="sub">Consulta cuánto se ha pagado y cuánto falta por cobrar</div></div><input id="financeSearch" placeholder="Buscar cliente..." style="max-width:190px;background:#171925;color:var(--text);border:1px solid var(--edge);border-radius:9px;padding:9px"></div>
+ <div id="financeRows" class="upcoming-list"></div>
+ <div class="quick" style="margin-top:14px"><button class="btn ghost" id="financeExport">↓ Exportar resumen CSV</button></div>
+</section>
+<div class="footer">90° STUDIO · AGENDA PROFESIONAL · Tus momentos, bien organizados.</div>
+</div>
+<nav class="mobile-nav"><a href="#">⌂ Inicio</a><a href="#calendarPanel">▦ Calendario</a><a href="#" id="mobileAdd">＋ Agendar</a><a href="#" id="mobileBackup">⇧ Respaldo</a></nav>
+<div class="modal" id="modal"><div class="dialog"><div class="dialog-head"><h3 id="modalTitle">Nueva sesión</h3><button class="close" id="closeModal">✕</button></div>
+<form id="sessionForm"><input type="hidden" id="sessionId"><div class="form-grid">
+ <div class="field"><label>Nombre *</label><input id="firstName" required placeholder="Nombre del cliente"></div>
+ <div class="field"><label>Apellido *</label><input id="lastName" required placeholder="Apellido"></div>
+ <div class="field"><label>WhatsApp</label><input id="whatsapp" type="tel" placeholder="Ej. 300 123 4567"></div>
+ <div class="field"><label>Tipo de sesión *</label><select id="type" required><option>Boda</option><option>15 años</option><option>Foto estudio</option><option>Cumpleaños</option><option>Bebé</option><option>Maternidad</option><option>Bautizo</option><option>Primera comunión</option><option>Sesión familiar</option><option>Fotografía de productos</option><option>Evento corporativo</option><option>Graduación</option><option>Otro</option></select></div>
+ <div class="field"><label>Servicio</label><select id="service"><option>Fotografía</option><option>Video</option><option>Fotografía y video</option></select></div>
+ <div class="field"><label>Fecha *</label><input id="date" type="date" required></div>
+ <div class="field"><label>Hora *</label><input id="time" type="time" required></div>
+ <div class="field"><label>Valor de la sesión (COP) *</label><input id="price" type="text" inputmode="numeric" autocomplete="off" required placeholder="Ej. 450.000"></div>
+ <div class="field"><label>Abono / valor pagado (COP)</label><input id="paid" type="text" inputmode="numeric" autocomplete="off" value="0" placeholder="0"></div>
+ <div class="field full"><label>Estado del pago</label><select id="paymentStatus"><option value="pending">Pendiente de pago</option><option value="deposit">Abonó / pago parcial</option><option value="paid">Pagó la totalidad</option></select><div class="sub" id="balanceHint">Saldo pendiente: $0</div></div>
+ <div class="field full"><label>Notas / ubicación / detalles</label><textarea id="notes" placeholder="Dirección, lugar del evento, indicaciones..."></textarea></div>
+</div><div class="dialog-actions"><button type="button" class="btn ghost" id="cancelModal">Cancelar</button><button type="submit" class="btn primary">Guardar sesión</button></div></form>
+</div></div>
+<div class="alarm" id="alarm"><strong>⚠ ALERTA DE AGENDA</strong><p id="alarmText">Tienes una sesión próxima.</p><button id="stopAlarm">Detener alarma</button></div><div class="toast" id="toast"></div><div id="printInvoice"></div>
+<script>
+const $=id=>document.getElementById(id);
+const KEY='agenda90.sessions.v1';
+let sessions=load(), view=new Date(), audioCtx=null, alarmTimer=null, alarmOsc=[], alarmGain=null, alarmPlayedKey='', soundEnabled=false;
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch{return []}}
+function save(){localStorage.setItem(KEY,JSON.stringify(sessions));render()}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8)}
+function localDate(s){return new Date(s+'T00:00:00')}
+function today(){const d=new Date();return new Date(d.getFullYear(),d.getMonth(),d.getDate())}
+function dayDiff(s){return Math.round((localDate(s)-today())/86400000)}
+function status(s){let n=dayDiff(s.date);return n<=1?'red':n===2?'yellow':'green'}
+function fmtDate(s){return localDate(s).toLocaleDateString('es-CO',{day:'numeric',month:'short',year:'numeric'})}
+function money(v){return new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(Number(v||0))}
+function parseCOP(value){return Number(String(value??'').replace(/[^0-9]/g,''))||0}
+function formatCOPInput(input){const digits=String(input.value||'').replace(/[^0-9]/g,'');input.value=digits?new Intl.NumberFormat('es-CO',{maximumFractionDigits:0}).format(Number(digits)):(input=== $('paid')?'0':'')}
+function paymentLabel(s){return s.paymentStatus==='paid'?'Pagado totalmente':s.paymentStatus==='deposit'?'Abono recibido':'Pendiente de pago'}
+function updateBalance(){let total=parseCOP($('price').value),paid=parseCOP($('paid').value);$('balanceHint').textContent='Saldo pendiente: '+money(Math.max(0,total-paid))}
+['price','paid'].forEach(id=>$(id).addEventListener('input',e=>{const el=e.target;const start=el.selectionStart;const oldLength=el.value.length;formatCOPInput(el);const delta=el.value.length-oldLength;try{el.setSelectionRange(Math.max(0,start+delta),Math.max(0,start+delta))}catch{}updateBalance()}));
+
+function escapeHtml(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function toast(t){$('toast').textContent=t;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',2600)}
+function render(){
+ const now=today(), ym=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+ $('totalCount').textContent=sessions.length;
+ $('monthCount').textContent=sessions.filter(s=>s.date.startsWith(ym)).length;
+ $('pendingCount').textContent=sessions.filter(s=>dayDiff(s.date)>=0).length;
+ $('todayCount').textContent=sessions.filter(s=>dayDiff(s.date)<=1&&dayDiff(s.date)>=0).length;
+ $('monthLabel').textContent=view.toLocaleDateString('es-CO',{month:'long',year:'numeric'});
+ const cal=$('calendar');cal.innerHTML='';
+ ['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'].forEach(x=>{let e=document.createElement('div');e.className='weekday';e.textContent=x;cal.append(e)});
+ const first=new Date(view.getFullYear(),view.getMonth(),1), start=first.getDay(), days=new Date(view.getFullYear(),view.getMonth()+1,0).getDate(), prevDays=new Date(view.getFullYear(),view.getMonth(),0).getDate();
+ for(let i=0;i<42;i++){
+  let dateNum=i-start+1, d=new Date(view.getFullYear(),view.getMonth(),dateNum), inMonth=dateNum>=1&&dateNum<=days, iso=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  let cell=document.createElement('div');cell.className='day'+(!inMonth?' muted':'')+(iso===now.toISOString().slice(0,10)?' today':'');
+  let num=inMonth?dateNum:(dateNum<1?prevDays+dateNum:dateNum-days);
+  let items=sessions.filter(s=>s.date===iso);
+  if(items.length)cell.classList.add('has-event');
+  cell.innerHTML=`<div class="day-num">${num}</div><div class="day-items">${items.slice(0,3).map(s=>`<div class="event-chip ${status(s)}" title="${escapeHtml(s.firstName+' '+s.lastName)}">${escapeHtml(s.firstName+' '+s.lastName)}</div>`).join('')}${items.length>3?`<div class="sub">+${items.length-3} más</div>`:''}</div>`;
+  if(items.length)cell.title=items.map(s=>s.firstName+' '+s.lastName+' · '+s.time).join('\n');
+  cell.addEventListener('click',()=>{if(items.length)showDay(iso);else if(inMonth){openModal(null,iso)}});
+  cal.append(cell);
+ }
+ const list=$('upcoming');let upcoming=sessions.filter(s=>dayDiff(s.date)>=0).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time)).slice(0,6);
+ list.innerHTML=upcoming.length?'': '<div class="empty">Aún no tienes sesiones próximas.<br>¡Agenda tu próximo cliente!</div>';
+ upcoming.forEach(s=>{let st=status(s),n=dayDiff(s.date),label=n===0?'Hoy':n===1?'Mañana':`En ${n} días`;let card=document.createElement('div');card.className='session-card';card.innerHTML=`<div class="session-top"><h4>${escapeHtml(s.firstName)} ${escapeHtml(s.lastName)}</h4><span class="pill ${st}">${label}</span></div><p>${escapeHtml(s.type)} · ${escapeHtml(s.service)}</p><p>▦ ${fmtDate(s.date)} · ◷ ${escapeHtml(s.time)}</p><p>Valor: ${money(s.price)} · Abonado: ${money(s.paid)} · Saldo: ${money(Math.max(0,s.price-s.paid))}</p><p>Pago: ${paymentLabel(s)}</p><div class="actions"><button class="mini" data-edit="${s.id}">✎ Editar</button><button class="mini" data-invoice="${s.id}">▤ Factura PDF</button><button class="mini danger" data-delete="${s.id}">⌫ Eliminar</button>${s.whatsapp?`<button class="mini" data-wa="${s.id}">WhatsApp</button>`:''}</div>`;list.append(card)});
+ document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>openModal(b.dataset.edit));
+ document.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>removeSession(b.dataset.delete));
+ document.querySelectorAll('[data-wa]').forEach(b=>b.onclick=()=>{let s=sessions.find(x=>x.id===b.dataset.wa);let n=s.whatsapp.replace(/\D/g,'');window.open('https://wa.me/'+(n.startsWith('57')?n:'57'+n),'_blank')});
+ document.querySelectorAll('[data-invoice]').forEach(b=>b.onclick=()=>generateInvoice(b.dataset.invoice));
+ renderFinance();
+}
+function generateInvoice(id){
+ const s=sessions.find(x=>x.id===id);if(!s)return;
+ const number='90-'+new Date().getFullYear()+'-'+String(sessions.findIndex(x=>x.id===id)+1).padStart(4,'0');
+ const total=Number(s.price||0),paid=Number(s.paid||0),balance=Math.max(0,total-paid);
+ const invoice=$('printInvoice');
+ invoice.innerHTML=`<div style="max-width:760px;margin:25px auto;padding:28px;color:#171824;background:#fff;font-family:Arial,sans-serif;border:1px solid #e4e5eb">
+ <div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #171824;padding-bottom:22px">
+ <div><div style="font-size:28px;font-weight:900;letter-spacing:-1px">90 <span style="color:#8c62e8">GRADOS</span></div><div style="font-size:10px;letter-spacing:3px;color:#777;margin-top:4px">FOTOGRAFÍA · VIDEO · EXPERIENCIAS</div></div>
+ <div style="text-align:right"><div style="font-size:25px;font-weight:800;letter-spacing:2px">FACTURA</div><div style="font-size:12px;color:#666;margin-top:5px">Comprobante de servicio</div><div style="font-size:12px;margin-top:10px"><b>N.º ${escapeHtml(number)}</b></div><div style="font-size:12px;color:#666">Fecha de emisión: ${new Date().toLocaleDateString('es-CO')}</div></div></div>
+ <div style="display:grid;grid-template-columns:1fr 1fr;gap:25px;padding:25px 0"><div><div style="font-size:10px;color:#888;letter-spacing:1.5px;margin-bottom:8px">FACTURADO A</div><b style="font-size:17px">${escapeHtml(s.firstName)} ${escapeHtml(s.lastName)}</b><div style="font-size:12px;color:#555;margin-top:6px">WhatsApp: ${escapeHtml(s.whatsapp||'No registrado')}</div></div><div><div style="font-size:10px;color:#888;letter-spacing:1.5px;margin-bottom:8px">DETALLES DE LA SESIÓN</div><div style="font-size:13px"><b>${escapeHtml(s.type)}</b> · ${escapeHtml(s.service)}</div><div style="font-size:12px;color:#555;margin-top:6px">${fmtDate(s.date)} · ${escapeHtml(s.time)}</div></div></div>
+ <table style="width:100%;border-collapse:collapse;font-size:13px"><thead><tr style="background:#f1f1f5"><th style="text-align:left;padding:13px">Descripción</th><th style="text-align:right;padding:13px">Valor</th></tr></thead><tbody><tr><td style="padding:16px 13px;border-bottom:1px solid #eee">${escapeHtml(s.type)} — ${escapeHtml(s.service)}</td><td style="padding:16px 13px;text-align:right;border-bottom:1px solid #eee">${money(total)}</td></tr></tbody></table>
+ <div style="width:min(330px,100%);margin:20px 0 20px auto;font-size:13px"><div style="display:flex;justify-content:space-between;padding:7px 0"><span>Valor del servicio</span><b>${money(total)}</b></div><div style="display:flex;justify-content:space-between;padding:7px 0"><span>Abono recibido</span><b>${money(paid)}</b></div><div style="display:flex;justify-content:space-between;padding:12px 0;border-top:2px solid #171824;font-size:17px"><b>Saldo pendiente</b><b>${money(balance)}</b></div><div style="text-align:right;color:${balance===0?'#16865f':'#9a6511'};font-weight:bold">${paymentLabel(s).toUpperCase()}</div></div>
+ ${s.notes?`<div style="background:#f6f6f8;padding:13px;font-size:11px;color:#555;margin-top:18px"><b>Notas:</b> ${escapeHtml(s.notes)}</div>`:''}
+ <div style="border-top:1px solid #ddd;margin-top:35px;padding-top:17px;text-align:center;color:#777;font-size:11px">Gracias por confiar tus recuerdos a <b>90 Grados</b>.<br>Este documento es un comprobante de servicio y pago; no sustituye una factura electrónica validada por la DIAN.</div></div>
+ <div style="text-align:center;margin:18px auto 35px;max-width:760px"><button onclick="window.print()" style="background:#8c62e8;color:white;border:0;border-radius:8px;padding:12px 20px;font-weight:bold;cursor:pointer">Imprimir / Guardar como PDF</button> <button onclick="document.getElementById('printInvoice').style.display='none';document.querySelector('.app').style.display='block'" style="background:#eee;color:#222;border:0;border-radius:8px;padding:12px 20px;cursor:pointer">Cerrar factura</button></div>`;
+ $('printInvoice').style.display='block';document.querySelector('.app').style.display='none';window.scrollTo(0,0);
+}
+
+function renderFinance(){
+ const total=sessions.reduce((a,s)=>a+Number(s.price||0),0);
+ const collected=sessions.reduce((a,s)=>a+Number(s.paid||0),0);
+ const pending=sessions.reduce((a,s)=>a+Math.max(0,Number(s.price||0)-Number(s.paid||0)),0);
+ $('finCollected').textContent=money(collected);
+ $('finContracted').textContent=money(total);
+ $('finPending').textContent=money(pending);
+ $('finCount').textContent=sessions.length;
+ const yearSelect=$('financeYear');const years=[...new Set([new Date().getFullYear(),...sessions.map(s=>Number((s.date||'').slice(0,4))).filter(Boolean)])].sort((a,b)=>b-a);
+ const previous=yearSelect.value;yearSelect.innerHTML=years.map(y=>`<option value="${y}">${y}</option>`).join('');yearSelect.value=years.includes(Number(previous))?previous:String(years[0]||new Date().getFullYear());
+ const y=Number(yearSelect.value),monthNames=['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+ const monthly=Array(12).fill(0);sessions.forEach(s=>{if(Number((s.date||'').slice(0,4))===y){monthly[Number(s.date.slice(5,7))-1]+=Number(s.paid||0)}});
+ const max=Math.max(1,...monthly);$('financeBars').innerHTML=monthly.map((v,i)=>`<div title="${monthNames[i]}: ${money(v)}" style="height:132px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:7px;min-width:0"><div style="width:100%;height:${Math.max(3,(v/max)*105)}px;border-radius:7px 7px 3px 3px;background:linear-gradient(180deg,#b58aff,#7048d8);box-shadow:0 0 12px #9866ff35"></div><span style="font-size:9px;color:var(--muted)">${monthNames[i]}</span></div>`).join('');
+ const q=($('financeSearch').value||'').toLowerCase();
+ const rows=[...sessions].filter(s=>(s.firstName+' '+s.lastName+' '+s.type).toLowerCase().includes(q)).sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
+ $('financeRows').innerHTML=rows.length?'':'<div class="empty">No hay sesiones que coincidan con la búsqueda.</div>';
+ rows.forEach(s=>{const paid=Number(s.paid||0),price=Number(s.price||0),balance=Math.max(0,price-paid);const row=document.createElement('div');row.className='session-card';row.innerHTML=`<div class="session-top"><h4>${escapeHtml(s.firstName)} ${escapeHtml(s.lastName)}</h4><span class="pill ${balance===0?'green':paid>0?'yellow':'red'}">${balance===0?'Pagado':paid>0?'Abonado':'Pendiente'}</span></div><p>${escapeHtml(s.type)} · ${escapeHtml(s.service)} · ${fmtDate(s.date)}</p><p>Valor: <b>${money(price)}</b> · Recibido: <b style="color:var(--green)">${money(paid)}</b></p><p>Saldo por cobrar: <b style="color:${balance?'var(--yellow)':'var(--green)'}">${money(balance)}</b></p>`;$('financeRows').append(row)});
+}
+$('financeYear').addEventListener('change',renderFinance);
+$('financeSearch').addEventListener('input',renderFinance);
+$('financeJump').onclick=()=>document.getElementById('financePanel').scrollIntoView({behavior:'smooth'});
+$('financeExport').onclick=()=>{const rows=[['Cliente','WhatsApp','Sesión','Servicio','Fecha','Valor total','Recibido','Saldo pendiente','Estado'],...sessions.map(s=>[s.firstName+' '+s.lastName,s.whatsapp,s.type,s.service,s.date,s.price||0,s.paid||0,Math.max(0,(s.price||0)-(s.paid||0)),paymentLabel(s)])];const csv=rows.map(r=>r.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(';')).join('\\n');const blob=new Blob(['\\ufeff'+csv],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='finanzas-90-grados.csv';a.click();URL.revokeObjectURL(a.href);toast('Resumen financiero exportado')};
+
+function showDay(date){let items=sessions.filter(s=>s.date===date);alert('AGENDA · '+fmtDate(date)+'\n\n'+items.map(s=>`${s.firstName} ${s.lastName}\n${s.type} · ${s.service}\n${s.time}${s.notes?'\n'+s.notes:''}`).join('\n\n'))}
+function openModal(id=null,date=''){
+ $('sessionForm').reset();$('sessionId').value='';$('modalTitle').textContent=id?'Editar sesión':'Nueva sesión';
+ if(id){let s=sessions.find(x=>x.id===id);if(!s)return;for(let k of ['firstName','lastName','whatsapp','type','service','date','time','notes','price','paid','paymentStatus'])$(k).value=s[k]??(k==='paid'?'0':k==='paymentStatus'?'pending':'');$('price').value=s.price?new Intl.NumberFormat('es-CO',{maximumFractionDigits:0}).format(s.price):'';$('paid').value=new Intl.NumberFormat('es-CO',{maximumFractionDigits:0}).format(Number(s.paid||0));$('sessionId').value=s.id;updateBalance()}
+ else{$('date').value=date||new Date().toISOString().slice(0,10);$('time').value='09:00';$('price').value='';$('paid').value='0';$('paymentStatus').value='pending';updateBalance()}
+ $('modal').classList.add('open');
+}
+function closeModal(){$('modal').classList.remove('open')}
+function removeSession(id){let s=sessions.find(x=>x.id===id);if(s&&confirm(`¿Eliminar la sesión de ${s.firstName} ${s.lastName}? Esta acción no se puede deshacer.`)){sessions=sessions.filter(x=>x.id!==id);save();toast('Sesión eliminada')}}
+$('sessionForm').addEventListener('submit',e=>{e.preventDefault();let id=$('sessionId').value;let s={id:id||uid()};for(let k of ['firstName','lastName','whatsapp','type','service','date','time','notes'])s[k]=$(k).value.trim();s.price=parseCOP($('price').value);s.paid=parseCOP($('paid').value);s.paymentStatus=$('paymentStatus').value;if(s.paid>=s.price&&s.price>0)s.paymentStatus='paid';else if(s.paid>0)s.paymentStatus='deposit';if(id)sessions=sessions.map(x=>x.id===id?s:x);else sessions.push(s);save();closeModal();toast(id?'Sesión actualizada':'Sesión guardada correctamente');checkAlarm(true)});
+$('newBtn').onclick=$('quickAdd').onclick=$('mobileAdd').onclick=()=>openModal();
+$('closeModal').onclick=$('cancelModal').onclick=closeModal;
+$('modal').onclick=e=>{if(e.target===$('modal'))closeModal()};
+$('prevMonth').onclick=()=>{view=new Date(view.getFullYear(),view.getMonth()-1,1);render()};
+$('nextMonth').onclick=()=>{view=new Date(view.getFullYear(),view.getMonth()+1,1);render()};
+$('todayBtn').onclick=()=>{view=new Date();render()};
+$('exportBtn').onclick=()=>{let blob=new Blob([JSON.stringify(sessions,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='respaldo-agenda-90.json';a.click();URL.revokeObjectURL(a.href);toast('Respaldo descargado')};
+$('importBtn').onclick=()=>$('importFile').click();
+$('mobileBackup').onclick=e=>{e.preventDefault();$('exportBtn').click()};
+$('importFile').onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let data=JSON.parse(await f.text());if(!Array.isArray(data))throw Error();if(confirm('¿Importar '+data.length+' sesiones? Se reemplazará la agenda actual.')){sessions=data;save();toast('Agenda importada')}}catch{alert('El archivo no es un respaldo válido.')}e.target.value=''};
+async function enableAudio(){try{audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')await audioCtx.resume();soundEnabled=true;$('soundBtn').textContent='♫';toast('Sonido habilitado')}catch{toast('No se pudo habilitar el sonido')}}
+$('soundBtn').onclick=enableAudio;
+function playAlarm(){if(!soundEnabled||!audioCtx)return;stopAlarmSound();let start=audioCtx.currentTime;alarmGain=audioCtx.createGain();alarmGain.gain.setValueAtTime(.0001,start);alarmGain.gain.exponentialRampToValueAtTime(.18,start+.15);alarmGain.connect(audioCtx.destination);
+ for(let i=0;i<2;i++){let o=audioCtx.createOscillator();o.type='sawtooth';o.frequency.setValueAtTime(i?880:660,start);o.frequency.linearRampToValueAtTime(i?660:880,start+.45);o.frequency.linearRampToValueAtTime(i?880:660,start+.9);o.connect(alarmGain);o.start(start);o.stop(start+10);alarmOsc.push(o)}
+ alarmTimer=setTimeout(stopAlarmSound,10000)}
+function stopAlarmSound(){if(alarmTimer)clearTimeout(alarmTimer);alarmTimer=null;alarmOsc.forEach(o=>{try{o.stop()}catch{}});alarmOsc=[];if(alarmGain){try{alarmGain.gain.setTargetAtTime(.0001,audioCtx.currentTime,.03)}catch{}}}
+$('stopAlarm').onclick=()=>{$('alarm').classList.remove('show');stopAlarmSound()};
+function checkAlarm(force=false){let imminent=sessions.filter(s=>dayDiff(s.date)>=0&&dayDiff(s.date)<=1).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));if(!imminent.length){$('alarm').classList.remove('show');return}
+ let key=imminent.map(s=>s.id).join('|')+'_'+today().toDateString();$('alarmText').textContent=imminent.map(s=>`${s.firstName} ${s.lastName} · ${s.date===today().toISOString().slice(0,10)?'HOY':'MAÑANA'} · ${s.time}`).join(' / ');
+ $('alarm').classList.add('show');if(force||key!==alarmPlayedKey){alarmPlayedKey=key;if(soundEnabled)playAlarm();else $('alarmText').textContent+=' · Activa ♬ para escuchar la alarma.'}}
+document.addEventListener('pointerdown',()=>{if(!soundEnabled)enableAudio()},{once:true});
+render();checkAlarm();setInterval(()=>{render();checkAlarm()},60000);
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
